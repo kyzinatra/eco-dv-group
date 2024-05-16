@@ -1,17 +1,10 @@
 ---
 import ServiceLink from "./service-link/service-link.astro";
+import { serviceLinks } from "./services.constants";
 
 import css from "./services.module.css";
-
-import Link1 from "../../../public/services/link-1.png";
-import Link2 from "../../../public/services/link-2.png";
-import Link3 from "../../../public/services/link-3.png";
-import Link4 from "../../../public/services/link-4.png";
 ---
 
 <section class={css.services}>
-	<ServiceLink title="Инженерные изыскания и мониторинг" src={Link1} to="/card/1" />
-	<ServiceLink title="Нормирование" src={Link2} to="/card/2" />
-	<ServiceLink title="Экологическое проектирование" src={Link3} to="/card/3" />
-	<ServiceLink title="Экологические сопровождение (консалтинг)" src={Link4} to="/card/4" />
+	{serviceLinks.map((el) => <ServiceLink title={el.title} src={el.src} to={el.to} />)}
 </section>

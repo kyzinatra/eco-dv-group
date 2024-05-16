@@ -1,9 +1,11 @@
 ---
 import About from "../components/about/about.astro";
+import Contacts from "../components/contacts/contacts.astro";
 import AboutCover from "../components/covers/about-cover/about-cover.astro";
 import ServicesCover from "../components/covers/services-cover/services-cover.astro";
 import Divider from "../components/divider/divider.astro";
 import Header from "../components/header/header.astro";
+import Partners from "../components/partners/partners.astro";
 import MoreServices from "../components/services/more-services.astro";
 import Services from "../components/services/services.astro";
 import Layout from "../layouts/Layout.astro";
@@ -21,7 +23,8 @@ import Layout from "../layouts/Layout.astro";
 	<Divider>Другие наши услуги</Divider>
 	<MoreServices />
 	<Divider>Партнеры</Divider>
-
+	<Partners />
 	<Divider>Контакты</Divider>
+	<Contacts />
 </Layout>
 <script src="../utils/paralax.utils.ts"></script>

@@ -1,54 +1,19 @@
 ---
 import AboutCard from "./about-card/about-card.astro";
+import { aboutCards } from "./about.constants";
 import css from "./about.module.css";
-
-import Card1 from "../../../public/about/card-1.png";
-import Card2 from "../../../public/about/card-2.png";
-import Card3 from "../../../public/about/card-3.png";
-import Card4 from "../../../public/about/card-4.png";
-import Card5 from "../../../public/about/card-5.png";
-import Card6 from "../../../public/about/card-6.png";
-import Card7 from "../../../public/about/card-7.png";
-import Card8 from "../../../public/about/card-8.png";
-import Card9 from "../../../public/about/card-9.png";
-import Card10 from "../../../public/about/card-10.png";
-import Card11 from "../../../public/about/card-11.png";
-import Card12 from "../../../public/about/card-12.png";
 ---
 
 <section class={css.about}>
-	<AboutCard src={Card1} alt="">
-		Уже 15 лет ЭКО-ДВ-ПРОЕКТ являясь ведущей компанией в вопросах экологического проектирования стремится к
-		инновационному и устойчивому развитию, уделяя особое внимание к современным технологиям и концепциям,
-		таким как экономика окружающей среды, экологическое проектирование и строительство с учетом экологических
-		факторов и экономических интересов общества.
-	</AboutCard>
-	<AboutCard src={Card3} className={css.about__grid_long} alt="" />
-	<AboutCard src={Card2} alt="" />
-
-	<AboutCard src={Card4} className={css.about__grid_long} alt="" />
-	<AboutCard src={Card5} alt="">
-		Мы предоставляем услуги экологического проектирования, инженерных изысканий, экологического аудита и
-		консалтинга в соответствии с потребностями и желаниями Заказчика по целому ряду направлений.
-	</AboutCard>
-	<AboutCard src={Card6} alt="" />
-
-	<AboutCard src={Card7} alt="" />
-	<AboutCard src={Card8} alt="">
-		Мы гордимся своей репутацией, основанной на ответственности и опыте. Над проектами ежедневно трудится штат
-		специалистов, в котором соединились опытные профессионалы  и молодые специалисты.
-	</AboutCard>
-
-	<AboutCard src={Card9} className={css.about__grid_wide} alt="" />
-	<AboutCard src={Card10} className={css.about__grid_wide} alt="">
-		Наша бизнес-модель оптимизирована таким образом, чтобы мы могли реагировать на ваши потребности по мере их
-		возникновения. Внимание к деталям и глубокое знание нормативных документов дает нам преимущество, которое
-		экономит время и деньги наших клиентов.
-	</AboutCard>
-
-	<AboutCard src={Card11} alt="" />
-	<AboutCard src={Card12} alt="">
-		Наши специалисты  имеют регистрацию в национальном реестре специалистов НОПРИЗ и закреплены за нашей
-		организацией вторым уровнем ответственности в ассоциации СРО «ОПОРА» и СРО «АИИС».
-	</AboutCard>
+	{
+		aboutCards.map((el) =>
+			el.content ? (
+				<AboutCard src={el.src} className={el.className} alt="">
+					{el.content}
+				</AboutCard>
+			) : (
+				<AboutCard src={el.src} className={el.className} alt="" />
+			)
+		)
+	}
 </section>
