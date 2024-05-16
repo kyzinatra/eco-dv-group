@@ -1,0 +1,24 @@
+---
+import Image from "astro/components/Image.astro";
+import css from "./abot-card.module.css";
+interface Props {
+	src: ImageMetadata;
+	alt: string;
+	className?: string | undefined;
+}
+
+const { alt, src, className } = Astro.props;
+---
+
+<div class:list={[className, css.card, { [css.card__hover as string]: !Astro.slots.has("default") }]}>
+	{
+		Astro.slots.has("default") && (
+			<div class={css["card__text-wrapper"]}>
+				<p class={css.card__text}>
+					<slot />
+				</p>
+			</div>
+		)
+	}
+	<Image src={src} alt={alt} />
+</div>

@@ -1,0 +1,20 @@
+.background {
+	composes: background from "../../style/utils/background.css";
+}
+
+.cover {
+	height: 80vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cover__text {
+	color: var(--text-accent);
+	font-size: 2rem;
+	text-align: center;
+	text-wrap: pretty;
+	font-weight: bold;
+	width: 70%;
+}

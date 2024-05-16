@@ -1,0 +1,17 @@
+---
+import Navigation from "../navigation/navigation.astro";
+import css from "./header.module.css";
+---
+
+<Navigation />
+<header class={css.header} data-parallax>
+	<section class={css.header__greeting}>
+		<h1 class={css.title}>Комплексное экологическое сопровождение на всех этапах реализации проекта</h1>
+		<p class={css.subtitle}>
+			Мы предоставляем услуги экологического проектирования, инженерных изысканий, экологического аудита и
+			консалтинга в соответствии с потребностями и желаниями Заказчика по целому ряду направлений.
+		</p>
+	</section>
+
+	<div data-parallaxbg class={css.background}></div>
+</header>

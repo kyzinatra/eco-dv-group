@@ -1,0 +1,27 @@
+---
+import About from "../components/about/about.astro";
+import AboutCover from "../components/covers/about-cover/about-cover.astro";
+import ServicesCover from "../components/covers/services-cover/services-cover.astro";
+import Divider from "../components/divider/divider.astro";
+import Header from "../components/header/header.astro";
+import MoreServices from "../components/services/more-services.astro";
+import Services from "../components/services/services.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="ЭКОДВПРОЕКТ групп">
+	<Header />
+	<Divider align="center">Тут текст</Divider>
+	<AboutCover />
+	<Divider>О нас</Divider>
+	<About />
+	<Divider>Услуги</Divider>
+	<ServicesCover />
+	<Services />
+	<Divider>Другие наши услуги</Divider>
+	<MoreServices />
+	<Divider>Партнеры</Divider>
+
+	<Divider>Контакты</Divider>
+</Layout>
+<script src="../utils/paralax.utils.ts"></script>

@@ -1,0 +1,15 @@
+---
+import css from "./cover.module.css";
+
+interface Props {
+	className?: string;
+	background: string;
+}
+
+const { className, background } = Astro.props;
+---
+
+<div class:list={[className, css.cover]} data-parallax>
+	<p class={css.cover__text}><slot /></p>
+	<div class={css.background} data-parallaxbg style={{ backgroundImage: `url("${background}")` }}></div>
+</div>

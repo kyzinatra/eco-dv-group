@@ -1,0 +1,17 @@
+.divider {
+	height: 7rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 0 4rem;
+	width: 100%;
+	text-transform: uppercase;
+
+	display: flex;
+	align-items: center;
+}
+
+.divider__title {
+	font-size: inherit;
+	font-weight: inherit;
+	margin: 0;
+}

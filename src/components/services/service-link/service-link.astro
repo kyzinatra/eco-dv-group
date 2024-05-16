@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import css from "./service-link.module.css";
+interface Props {
+	src: ImageMetadata;
+	title: string;
+	to: string;
+	alt?: string;
+}
+
+const { src, title, to, alt = "" } = Astro.props;
+---
+
+<a href={to} class={css.link}>
+	<Image src={src} alt={alt} />
+	<h4 class={css.link__title}>{title}</h4>
+</a>

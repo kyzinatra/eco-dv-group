@@ -1,0 +1,20 @@
+---
+import css from "./service-card.module.css";
+import { Image } from "astro:assets";
+
+interface Props {
+	title: string;
+	src: ImageMetadata;
+	order?: "reverse" | "direct";
+}
+
+const { title, src, order = "direct" } = Astro.props;
+---
+
+<div class={css.card}>
+	<div class={css.card__title} style={{ order: order === "direct" ? 0 : 1 }}>
+		<Image class={css.card__img} src={src} alt="" />
+		<h3 class={css.card__head}>{title}</h3>
+	</div>
+	<p class={css.card__text}><slot /></p>
+</div>

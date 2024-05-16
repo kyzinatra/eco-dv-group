@@ -1,0 +1,14 @@
+.about {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(8, auto);
+	gap: 30px;
+	padding: 0 1rem;
+}
+
+.about__grid_wide {
+	grid-column: span 2;
+}
+.about__grid_long {
+	grid-row: span 2;
+}
