@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import backImg from "../../../../public/back.svg";
+import css from "./service-full-card.module.css";
+
+import {} from "astro:transitions/client";
+interface Props {
+	src: ImageMetadata;
+	id: string;
+	title: string;
+	description: string;
+	list: string[];
+}
+
+const { src, id, list, title, description } = Astro.props;
+---
+
+<main class={css.card}>
+	<div class={css.card__preview}>
+		<section class={css.card__info}>
+			<h1 class={css.card__title}>{title}</h1>
+			<p class={css.card__description}>{description}</p>
+			<a href="/#contacts" class={css.card__contact}>Спросите нас</a>
+		</section>
+		<a class={css.card__back} href="#" onclick="window.history.back()">
+			<Image alt="Вернуться назад" src={backImg} />
+		</a>
+		<Image src={src} alt="" class={css.card__bgimage} transition:name={`card-${id}`} />
+	</div>
+	<div>
+		<ul class={css.card__list}>
+			{list.map((item) => <li class={css["card__list-item"]}>{item}</li>)}
+		</ul>
+	</div>
+</main>

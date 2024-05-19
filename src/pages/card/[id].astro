@@ -1,22 +1,16 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
-export const getStaticPaths = (async () => {
-	const ids = ["1", "2", "3", "4"];
-	const imgs: any[] = [];
-	for (let i = 0; i < ids.length; i++) {
-		imgs.push((await import("/public/services/link-" + ids[i] + ".png")).default);
-	}
+import ServiceFullCard from "../../components/services/service-full-card/service-full-card.astro";
+import { CARDS } from "./card.constants";
 
-	return ids.map((id, i) => ({ params: { id }, props: { img: imgs[i] } }));
+export const getStaticPaths = (async () => {
+	return CARDS.map((el) => ({ params: { id: el.id }, props: { ...el } }));
 }) satisfies GetStaticPaths;
 
-const { img } = Astro.props;
-
-const { id } = Astro.params;
+const { image, description, title, list, id } = Astro.props;
 ---
 
 <Layout title="Карочка">
-	<Image alt="" src={img} transition:name={"card-" + id} />
+	<ServiceFullCard src={image} description={description} title={title} list={list} id={id} />
 </Layout>
