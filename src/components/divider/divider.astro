@@ -1,13 +1,14 @@
 ---
 interface Props {
 	align?: "left" | "center" | "right";
+	id?: string;
 }
 import css from "./divider.module.css";
-const { align = "left" } = Astro.props;
+const { align = "left", id } = Astro.props;
 ---
 
-<div class={css.divider} style={{ justifyContent: align }}>
-	<h3 class={css.divider__title}>
+<div class={css.divider} style={{ justifyContent: align }} id={id}>
+	<h2 class={css.divider__title}>
 		<slot />
-	</h3>
+	</h2>
 </div>

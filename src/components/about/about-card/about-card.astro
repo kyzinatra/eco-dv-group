@@ -10,7 +10,16 @@ interface Props {
 const { alt, src, className } = Astro.props;
 ---
 
-<div class:list={[className, css.card, { [css.card__hover as string]: !Astro.slots.has("default") }]}>
+<div
+	class:list={[
+		className,
+		css.card,
+		{
+			[css.card__hover as string]: !Astro.slots.has("default"),
+			[css.card__sm_none as string]: !Astro.slots.has("default"),
+		},
+	]}
+>
 	{
 		Astro.slots.has("default") && (
 			<div class={css["card__text-wrapper"]}>

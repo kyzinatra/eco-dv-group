@@ -1,24 +1,36 @@
 import Glide from "@glidejs/glide";
 
-let glide: Glide = new Glide(".glide", {
-	autoplay: 2000,
-	perView: 4,
+let glide: Glide;
 
-	type: "carousel",
-});
-
-function init() {
+function addGlide() {
 	glide = new Glide(".glide", {
-		autoplay: 3000,
+		autoplay: 1800,
 		perView: 4,
+		focusAt: "center",
+		gap: 20,
 		type: "carousel",
+		breakpoints: {
+			1124: {
+				perView: 3,
+			},
+			768: {
+				perView: 2,
+			},
+			500: {
+				perView: 1,
+			},
+		},
 	});
-	glide.mount();
 }
 
+function init() {
+	glide.mount();
+}
+addGlide();
 document.addEventListener("astro:page-load", () => {
 	console.log(document.querySelector(".glide"));
 	if (document.querySelector(".glide") === null) return;
 	glide?.destroy();
+	addGlide();
 	init();
 });

@@ -11,7 +11,7 @@
 
 .card__text {
 	width: 50%;
-	padding: 0 2rem;
+	padding: 1rem 2rem;
 	margin: 0;
 	color: var(--text-secondary);
 	display: flex;
@@ -44,4 +44,21 @@
 	padding: 0 2rem;
 
 	background: rgba(0, 0, 0, 0.6);
+}
+
+.reverse {
+	order: 1;
+}
+
+@media screen and (width <= 780px) {
+	.card {
+		flex-direction: column;
+	}
+	.card__title,
+	.card__text {
+		width: 100%;
+	}
+	.reverse {
+		order: 0;
+	}
 }

@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(8, auto);
-	gap: 30px;
+	gap: 2rem;
 	padding: 0 1rem;
 }
 
@@ -11,4 +11,22 @@
 }
 .about__grid_long {
 	grid-row: span 2;
+}
+@media screen and (width <= 850px) {
+	.about {
+		gap: 1rem;
+	}
+}
+
+@media screen and (width <= 780px) {
+	.about {
+		grid-template-columns: 1fr;
+		gap: 1rem 0;
+		padding: 0;
+		grid-template-rows: repeat(4, auto);
+	}
+
+	.about__grid_wide {
+		grid-column: span 1;
+	}
 }

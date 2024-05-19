@@ -12,7 +12,7 @@ const { title, src, order = "direct" } = Astro.props;
 ---
 
 <div class={css.card}>
-	<div class={css.card__title} style={{ order: order === "direct" ? 0 : 1 }}>
+	<div class:list={[css.card__title, { [css.reverse as string]: order === "reverse" }]} }>
 		<Image class={css.card__img} src={src} alt="" />
 		<h3 class={css.card__head}>{title}</h3>
 	</div>

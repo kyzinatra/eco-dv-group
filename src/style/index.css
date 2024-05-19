@@ -42,3 +42,18 @@ body {
 .topscroll-active {
 	background-color: black;
 }
+
+.glide__slide--faded {
+	opacity: 0.5;
+}
+
+@media screen and (width <= 1000px) {
+	:root {
+		--font-size: 14px;
+	}
+}
+@media screen and (width <= 440px) {
+	:root {
+		--font-size: 12px;
+	}
+}

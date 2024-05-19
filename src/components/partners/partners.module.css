@@ -1,8 +1,0 @@
-.partners {
-	display: flex;
-	gap: 20px;
-	align-items: center;
-	justify-content: center;
-	padding: 3rem 1rem;
-	flex-wrap: wrap;
-}

@@ -14,5 +14,5 @@ const { src, title, to, alt = "", id } = Astro.props;
 
 <a href={to} class={css.link}>
 	<Image src={src} alt={alt} data-hoverscale transition:name={"card-" + id} />
-	<h4 class={css.link__title}>{title}</h4>
+	<h3 class={css.link__title}>{title}</h3>
 </a>

@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import css from "./navigation.module.css";
 ---
 
@@ -10,11 +11,14 @@ import css from "./navigation.module.css";
 			<span class={css.nav__logo_normal}>групп</span>
 		</h2>
 	</div>
-	<nav>
+	<nav class={css.nav__burger}>
 		<ul class={css.nav__list}>
 			<li><a href="#about">Компания</a></li>
 			<li><a href="#partners">Партнеры</a></li>
 			<li><a href="#contacts">Контакты</a></li>
 		</ul>
+		<button class={css.burger}>
+			<Image src="/burger.svg" width="35" height="35" alt="Меню" />
+		</button>
 	</nav>
 </div>

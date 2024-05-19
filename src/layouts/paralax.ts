@@ -18,7 +18,7 @@ function register() {
 				backgroundPosition: () => (i ? `50% ${-window.innerHeight * getRatio(section)}px` : "50% 0px"),
 			},
 			{
-				backgroundPosition: () => `50% ${window.innerHeight * (1 - getRatio(section))}px`,
+				backgroundPosition: () => `50% ${window.innerHeight * (1 - getRatio(section)) + 150}px`,
 				ease: "none",
 				scrollTrigger: {
 					trigger: section,
