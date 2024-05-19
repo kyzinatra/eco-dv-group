@@ -1,8 +1,32 @@
 ---
 import Partner from "./partner/partner.astro";
-import { partnersLinks } from "./partners.constants";
-
-import css from "./partners.module.css";
+import { PARTNERS_LINKS } from "./partners.constants";
 ---
 
-<section class={css.partners}>{partnersLinks.map((el) => <Partner src={el} alt="" />)}</section>
+<section class="glide">
+	<div class="glide__track" data-glide-el="track">
+		<div class="glide__slides">
+			{
+				PARTNERS_LINKS.map((el) => (
+					<div class="glide__slide">
+						<Partner src={el} alt="" />
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<style>
+	.glide__slides {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.glide__slide {
+		display: flex;
+		justify-content: center;
+	}
+</style>
+<script src="./slider.ts"></script>

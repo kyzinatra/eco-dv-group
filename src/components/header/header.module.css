@@ -31,6 +31,6 @@
 }
 
 .background {
-	background-image: url("/background-1.png");
+	background-image: url("/background-1.webp");
 	composes: background from "../../style/utils/background.css";
 }

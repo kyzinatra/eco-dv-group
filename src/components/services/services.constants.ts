@@ -3,7 +3,7 @@ import Link2 from "../../../public/services/link-2.png";
 import Link3 from "../../../public/services/link-3.png";
 import Link4 from "../../../public/services/link-4.png";
 
-export const serviceLinks = [
+export const SERVICE_LINKS = [
 	{
 		src: Link1,
 		title: "Инженерные изыскания и мониторинг",

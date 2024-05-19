@@ -2,12 +2,12 @@
 import css from "./more-services.module.css";
 import ServiceCard from "./service-card/service-card.astro";
 
-import { moreServicesCards } from "./more-services.constants";
+import { MORE_SERVICE_CARDS } from "./more-services.constants";
 ---
 
 <section class={css["more-services"]}>
 	{
-		moreServicesCards.map((el) => (
+		MORE_SERVICE_CARDS.map((el) => (
 			<ServiceCard title={el.title} order={el.order} src={el.src}>
 				{el.content}
 			</ServiceCard>

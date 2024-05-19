@@ -1,6 +1,6 @@
 @import "./fonts.css";
 @import "./normalize.css";
-
+@import "./utils/scale.css";
 :root {
 	--text-primary: #212121;
 	--text-secondary: #949494;
@@ -10,6 +10,8 @@
 	--color-primary: #3cc200;
 	--color-accent: #448aff;
 	--color-divider: #ebebeb;
+
+	--color-background: #ffffff;
 
 	--font-size: 16px;
 	--font-family: "Pragmatica", sans-serif;
@@ -35,4 +37,8 @@ body {
 
 * {
 	box-sizing: border-box;
+}
+
+.topscroll-active {
+	background-color: black;
 }

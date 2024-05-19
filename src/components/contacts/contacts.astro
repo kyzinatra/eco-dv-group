@@ -1,8 +1,26 @@
 ---
 import { Image } from "astro:assets";
 import MapImg from "../../../public/map.png";
+import { CONTACTS } from "./contacts.constants";
+
+import css from "./contacts.module.css";
 ---
 
 <section>
-	<Image src={MapImg} alt="Геолокация офиса" />
+	<div class={css.contacts}>
+		{
+			CONTACTS.map((el) => {
+				return (
+					<div class="">
+						{el.map((str) => (
+							<p>{str}</p>
+						))}
+					</div>
+				);
+			})
+		}
+	</div>
+	<div class={css.contacts__map}>
+		<Image src={MapImg} alt="Геолокация офиса" />
+	</div>
 </section>

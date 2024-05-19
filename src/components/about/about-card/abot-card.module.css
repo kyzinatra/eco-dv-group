@@ -1,18 +1,6 @@
-.card img {
-	transition: transform 0.5s ease-in-out;
-
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
 .card {
 	position: relative;
 	overflow: hidden;
-}
-
-.card__hover:hover img {
-	transform: scale(1.1);
 }
 
 .card__text-wrapper {

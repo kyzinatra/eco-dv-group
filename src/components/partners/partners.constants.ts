@@ -9,7 +9,7 @@ import PartnerImg8 from "../../../public/partners/partner-8.png";
 import PartnerImg9 from "../../../public/partners/partner-9.png";
 import PartnerImg10 from "../../../public/partners/partner-10.png";
 
-export const partnersLinks = [
+export const PARTNERS_LINKS = [
 	PartnerImg1,
 	PartnerImg2,
 	PartnerImg3,

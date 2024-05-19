@@ -7,7 +7,6 @@ import Card6 from "../../../public/about/card-6.png";
 import Card7 from "../../../public/about/card-7.png";
 import Card8 from "../../../public/about/card-8.png";
 import Card9 from "../../../public/about/card-9.png";
-import Card10 from "../../../public/about/card-10.png";
 import Card11 from "../../../public/about/card-11.png";
 import Card12 from "../../../public/about/card-12.png";
 
@@ -49,12 +48,6 @@ export const aboutCards = [
 	},
 	{
 		src: Card9,
-		className: css.about__grid_wide,
-	},
-	{
-		src: Card10,
-		content:
-			"Наша бизнес-модель оптимизирована таким образом, чтобы мы могли реагировать на ваши потребности по мере их возникновения. Внимание к деталям и глубокое знание нормативных документов дает нам преимущество, которое экономит время и деньги наших клиентов.",
 		className: css.about__grid_wide,
 	},
 	{

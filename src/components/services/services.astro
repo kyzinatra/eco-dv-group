@@ -1,10 +1,10 @@
 ---
 import ServiceLink from "./service-link/service-link.astro";
-import { serviceLinks } from "./services.constants";
+import { SERVICE_LINKS } from "./services.constants";
 
 import css from "./services.module.css";
 ---
 
 <section class={css.services}>
-	{serviceLinks.map((el) => <ServiceLink title={el.title} src={el.src} to={el.to} />)}
+	{SERVICE_LINKS.map((el, i) => <ServiceLink title={el.title} src={el.src} to={el.to} id={i + 1} />)}
 </section>

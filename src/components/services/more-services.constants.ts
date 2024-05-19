@@ -5,7 +5,7 @@ import Card4 from "../../../public/services/more/card-4.png";
 import Card5 from "../../../public/services/more/card-5.png";
 import Card6 from "../../../public/services/more/card-6.png";
 
-export const moreServicesCards = [
+export const MORE_SERVICE_CARDS = [
 	{
 		src: Card1,
 		title: "Cопровождение проектов в контролирующих органах",
