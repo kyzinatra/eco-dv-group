@@ -48,10 +48,10 @@ const { title } = Astro.props;
 		<script src="./scroll.ts"></script>
 	</head>
 
-	<ViewTransitions />
-	<title>{title}</title>
-
 	<body>
+		<ViewTransitions />
+		<title>{title}</title>
+
 		<slot />
 	</body>
 </html>
