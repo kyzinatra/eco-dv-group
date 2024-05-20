@@ -10,7 +10,6 @@
 .contacts__map {
 	display: flex;
 	justify-content: center;
-	cursor: zoom-in;
 }
 
 @media screen and (width <= 620px) {

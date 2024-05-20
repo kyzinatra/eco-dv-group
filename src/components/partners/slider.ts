@@ -29,7 +29,6 @@ function init() {
 }
 addGlide();
 document.addEventListener("astro:page-load", () => {
-	console.log(document.querySelector(".glide"));
 	if (document.querySelector(".glide") === null) return;
 	glide?.destroy();
 	addGlide();

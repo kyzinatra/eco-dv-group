@@ -5,6 +5,6 @@ import { SERVICE_LINKS } from "./services.constants";
 import css from "./services.module.css";
 ---
 
-<section class={css.services}>
+<section class={css.services} id="services">
 	{SERVICE_LINKS.map((el, i) => <ServiceLink title={el.title} src={el.src} to={el.to} id={i + 1} />)}
 </section>
