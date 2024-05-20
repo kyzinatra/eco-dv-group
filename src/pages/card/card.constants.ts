@@ -1,7 +1,7 @@
 import img1 from "../../../public/services/link-1.png";
-import img2 from "../../../public/services/link-1.png";
-import img3 from "../../../public/services/link-1.png";
-import img4 from "../../../public/services/link-1.png";
+import img2 from "../../../public/services/link-2.png";
+import img3 from "../../../public/services/link-3.png";
+import img4 from "../../../public/services/link-4.png";
 
 export const CARDS = [
 	{
