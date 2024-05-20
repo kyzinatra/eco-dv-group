@@ -14,9 +14,32 @@ const { title } = Astro.props;
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="og:title" content="ЭКОДВПРОЕКТ групп" />
-		<meta name="og:description" content="" />
-		<meta name="og:image" content="/ogimg.png" />
+		<!-- HTML Meta Tags -->
+		<title>ЭКОДВПРОЕКТ групп</title>
+		<meta
+			name="description"
+			content="Мы предоставляем услуги экологического проектирования, инженерных изысканий, экологического аудита и консалтинга в соответствии с потребностями и желаниями Заказчика по целому ряду направлений."
+		/>
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="ЭКОДВПРОЕКТ групп" />
+		<meta
+			property="og:description"
+			content="Мы предоставляем услуги экологического проектирования, инженерных изысканий, экологического аудита и консалтинга в соответствии с потребностями и желаниями Заказчика по целому ряду направлений."
+		/>
+		<meta property="og:image" content="/ogimg.png" />
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="ЭКОДВПРОЕКТ групп" />
+		<meta
+			name="twitter:description"
+			content="Мы предоставляем услуги экологического проектирования, инженерных изысканий, экологического аудита и консалтинга в соответствии с потребностями и желаниями Заказчика по целому ряду направлений."
+		/>
+		<meta name="twitter:image" content="/ogimg.png" />
+
+		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
