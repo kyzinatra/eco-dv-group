@@ -18,3 +18,9 @@
 		gap: 20px;
 	}
 }
+
+.main {
+	max-width: 1600px;
+	width: 100%;
+	margin: auto;
+}

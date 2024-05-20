@@ -8,8 +8,6 @@
 		const topOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 		const isNewScrolled = !!~~(topOffset >> 3);
 
-		if (isScrolled === isNewScrolled) return;
-
 		isScrolled = isNewScrolled;
 
 		subscribers.forEach((el) => {

@@ -7,6 +7,7 @@ function addGlide() {
 		autoplay: 1800,
 		perView: 4,
 		focusAt: "center",
+		hoverpause: false,
 		gap: 20,
 		type: "carousel",
 		breakpoints: {
