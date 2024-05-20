@@ -10,13 +10,7 @@
 .contacts__map {
 	display: flex;
 	justify-content: center;
-}
-
-.contacts__map img {
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	padding: 0 2rem;
+	cursor: zoom-in;
 }
 
 @media screen and (width <= 620px) {
