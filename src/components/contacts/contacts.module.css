@@ -12,6 +12,11 @@
 	justify-content: center;
 }
 
+.contacts__map img {
+	width: 100%;
+	height: auto;
+}
+
 @media screen and (width <= 620px) {
 	.contacts {
 		flex-direction: column;
