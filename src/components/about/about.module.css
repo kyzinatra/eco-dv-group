@@ -1,7 +1,7 @@
 .about {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(8, auto);
+	grid-template-rows: repeat(5, auto);
 	gap: 2rem;
 	padding: 0 1rem;
 }
@@ -23,7 +23,7 @@
 		grid-template-columns: 1fr;
 		gap: 1rem 0;
 		padding: 0;
-		grid-template-rows: repeat(4, auto);
+		grid-template-rows: repeat(3, auto);
 	}
 
 	.about__grid_wide {
