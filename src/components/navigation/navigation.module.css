@@ -74,7 +74,7 @@
 }
 
 .nav__logo_blue {
-	color: var(--color-accent);
+	color: #86ec76;
 }
 
 .nav__logo_normal {
@@ -113,6 +113,8 @@
 
 		border-color: var(--color-accent);
 	}
+
+	/*  */
 
 	.nav__list li {
 		padding: 0.5rem 4rem;
