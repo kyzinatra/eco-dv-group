@@ -4,5 +4,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap()]
+	site: "https://eko-dv-proekt.ru",
+	integrations: [sitemap()],
 });

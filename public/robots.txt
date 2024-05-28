@@ -1,0 +1,3 @@
+Sitemap: https://eko-dv-proekt.ru/sitemap-index.xml
+User-agent: *
+Allow: /
