@@ -79,7 +79,8 @@
 
 .nav__logo_normal {
 	font-weight: normal;
-	align-self: last baseline;
+	padding-left: 5px;
+	margin-top: 5px;
 }
 
 .nav__logo_normal[style*="--is-scroll-top: true"] {
@@ -118,6 +119,10 @@
 
 	.nav__list li {
 		padding: 0.5rem 4rem;
+	}
+
+	.nav__title img {
+		width: 30px;
 	}
 }
 @media screen and (width <= 440px) {
