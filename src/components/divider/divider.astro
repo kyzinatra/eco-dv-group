@@ -2,13 +2,22 @@
 interface Props {
 	align?: "left" | "center" | "right";
 	id?: string;
+	isHead?: boolean;
 }
 import css from "./divider.module.css";
-const { align = "left", id } = Astro.props;
+const { align = "left", id, isHead = true } = Astro.props;
 ---
 
 <div class={css.divider} style={{ justifyContent: align }} id={id}>
-	<h2 class={css.divider__title}>
-		<slot />
-	</h2>
+	{
+		isHead ? (
+			<h2 class={css.divider__title}>
+				<slot />
+			</h2>
+		) : (
+			<div class={css.divider__title}>
+				<slot />
+			</div>
+		)
+	}
 </div>
