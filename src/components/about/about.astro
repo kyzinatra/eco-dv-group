@@ -4,7 +4,7 @@ import { aboutCards } from "./about.constants";
 import css from "./about.module.css";
 ---
 
-<section class={css.about}>
+<div class={css.about}>
 	{
 		aboutCards.map((el) =>
 			el.content ? (
@@ -16,4 +16,4 @@ import css from "./about.module.css";
 			)
 		)
 	}
-</section>
+</div>
