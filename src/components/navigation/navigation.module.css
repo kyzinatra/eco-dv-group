@@ -107,9 +107,7 @@
 	.burger {
 		display: inline-block;
 	}
-	.nav__burger:has(.burger:is(:focus, :focus-visible)) .nav__list {
-		transform: translateY(0);
-	}
+
 	.nav {
 		background: var(--color-background);
 		color: var(--text-primary);
