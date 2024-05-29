@@ -26,12 +26,23 @@ import logo from "../../../public/logo.svg";
 </div>
 
 <script>
-	const navList = document.querySelector("#nav-list") as HTMLElement;
-	const burgerMenu = document.querySelector("#burger-menu") as HTMLElement;
-	burgerMenu.addEventListener("focus", () => {
-		navList.style.transform = "translateY(0%)";
-	});
-	burgerMenu.addEventListener("blur", () => {
-		navList.style.transform = "";
+	document.addEventListener("astro:page-load", () => {
+		let navList = document.querySelector("#nav-list") as HTMLElement;
+		let burgerMenu = document.querySelector("#burger-menu") as HTMLElement;
+		function onFocus() {
+			navList.style.transform = "translateY(0%)";
+		}
+
+		function onBlur() {
+			navList.style.transform = "";
+		}
+		burgerMenu.removeEventListener("focus", onFocus);
+		burgerMenu.removeEventListener("blur", onBlur);
+
+		navList = document.querySelector("#nav-list") as HTMLElement;
+		burgerMenu = document.querySelector("#burger-menu") as HTMLElement;
+
+		burgerMenu.addEventListener("focus", onFocus);
+		burgerMenu.addEventListener("blur", onBlur);
 	});
 </script>
