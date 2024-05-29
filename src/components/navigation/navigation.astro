@@ -29,6 +29,7 @@ import logo from "../../../public/logo.svg";
 	document.addEventListener("astro:page-load", () => {
 		let navList = document.querySelector("#nav-list") as HTMLElement;
 		let burgerMenu = document.querySelector("#burger-menu") as HTMLElement;
+
 		function onFocus() {
 			navList.style.transform = "translateY(0%)";
 		}
@@ -36,8 +37,6 @@ import logo from "../../../public/logo.svg";
 		function onBlur() {
 			navList.style.transform = "";
 		}
-		burgerMenu.removeEventListener("focus", onFocus);
-		burgerMenu.removeEventListener("blur", onBlur);
 
 		navList = document.querySelector("#nav-list") as HTMLElement;
 		burgerMenu = document.querySelector("#burger-menu") as HTMLElement;
