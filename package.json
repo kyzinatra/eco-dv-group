@@ -13,6 +13,7 @@
 		"@astrojs/check": "^0.7.0",
 		"@astrojs/sitemap": "^3.1.5",
 		"@glidejs/glide": "^3.6.0",
+		"@vercel/speed-insights": "^1.0.11",
 		"astro": "^4.8.4",
 		"gsap": "^3.12.5",
 		"typescript": "^5.4.5"
