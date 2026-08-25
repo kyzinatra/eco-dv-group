@@ -1,3 +1,8 @@
 .partner {
-	filter: grayscale(0.8);
+	filter: grayscale(0.4);
+	max-width: 190px;
+	max-height: 120px;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
 }

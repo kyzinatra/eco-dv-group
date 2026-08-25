@@ -8,6 +8,13 @@ import PartnerImg7 from "../../../public/partners/partner-7.png";
 import PartnerImg8 from "../../../public/partners/partner-8.png";
 import PartnerImg9 from "../../../public/partners/partner-9.png";
 import PartnerImg10 from "../../../public/partners/partner-10.png";
+import PartnerImg11 from "../../../public/partners/partner-11.png";
+import PartnerImg12 from "../../../public/partners/partner-12.png";
+import PartnerImg13 from "../../../public/partners/partner-13.png";
+import PartnerImg14 from "../../../public/partners/partner-14.png";
+import PartnerImg15 from "../../../public/partners/partner-15.png";
+import PartnerImg16 from "../../../public/partners/partner-16.png";
+import PartnerImg17 from "../../../public/partners/partner-17.png";
 
 export const PARTNERS_LINKS = [
 	PartnerImg1,
@@ -20,4 +27,11 @@ export const PARTNERS_LINKS = [
 	PartnerImg8,
 	PartnerImg9,
 	PartnerImg10,
+	PartnerImg11,
+	PartnerImg12,
+	PartnerImg13,
+	PartnerImg14,
+	PartnerImg15,
+	PartnerImg16,
+	PartnerImg17,
 ];

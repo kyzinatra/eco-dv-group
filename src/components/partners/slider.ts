@@ -8,7 +8,7 @@ function addGlide() {
 		perView: 4,
 		focusAt: "center",
 		hoverpause: false,
-		gap: 20,
+		gap: 40,
 		type: "carousel",
 		breakpoints: {
 			1124: {
